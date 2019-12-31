@@ -3,10 +3,28 @@
   <head>
   </head>
   <body>
-　<input type="checkbox" name="cb1" value="項目1">項目1
-　<input type="checkbox" name="cb2" value="項目2">項目2
-　<input type="checkbox" name="cb3" value="項目3">項目3
-　<input type="submit" value="送信">
+    <form id="form" name="test_form" onsubmit="return check();">    
+      ジャンル
+      <input type="checkbox" name="checkbox" value="項目1">うどん
+	    <input type="checkbox" name="checkbox" value="項目2">カレー
+	    <input type="checkbox" name="checkbox" value="項目3">スープ
+	    
+      一人の入りやすさ
+	    <select name="selectbox">
+		  <option value="項目1">入りやすい</option>
+		  <option value="項目2">ふつう</option>
+		  <option value="項目3">入りにくい</option>
+  	  </select>
+      
+      今日の気分
+  	  <select name="selectbox">
+		  <option value="項目1">サク飯</option>
+		  <option value="項目2">ガッツリ飯</option>
+		  <option value="項目3">ゆっくり飯</option>
+
+    </select>
+	  <input type="submit" value="送信">
+  </form>
   </body>
 </html>
 
